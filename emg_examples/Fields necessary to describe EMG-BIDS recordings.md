@@ -9,7 +9,7 @@ Details with regard to the signals on disk (file format, channels.tsv, etc) are 
 To be agreed upon terminology:  
 EMG \= any type of electromyography  
 sEMG \= surface EMG, to be distinguished from needle EMG  
-iEMG \=? “invasive/intramuscular needle EMG”? **(currently out of scope)**  
+iEMG \=? "invasive/intramuscular needle EMG"? **(currently out of scope)**  
 HDsEMG \= high-density surface EMG. What defines high density? The IED and/or the number of electrodes?  
 HDiEMG \=? Is there also high density invasive EMG? Like with neuropixel probes or so?
 
@@ -71,13 +71,13 @@ We discussed various ways to document the electrode placement and the montage in
 
 * Option 1: (Sentence Description, human-readable, not machine readable)  
 * Option 2: Coordinates expressed in numbers within a defined coordinate frame  
-* Option 3: Using a standard such as [SENIAM.org](http://SENIAM.org) (not machine readable, not versioned, not explicit in the sense that you cannot say “SENIAM montage number 14” so still requires copying and pasting multiple pieces of text into a sentence)
+* Option 3: Using a standard such as [SENIAM.org](http://SENIAM.org) (not machine readable, not versioned, not explicit in the sense that you cannot say "SENIAM montage number 14" so still requires copying and pasting multiple pieces of text into a sentence)
 
 We settled on a mix of option 1 and 3, use free text with (where possible) terminology from an external authoritative source like SENIAM. Besides a textual (human readable) description, there are minimally required metadata fields to be specified. 
 
 RULE: If EMG recording is done using a single bipolar it is FORBIDDEN to mention the reference, If it is unipolar, the  reference MUST be documented. If it is double bipolar … (needs to be discussed but not now)  This also leads to the requirement to first document the recording type (single bipolar, unipolar, double bipolar, etc?) and based on that the reference (or not).
 
-RULE: The “where on the muscle/body” are the electrodes placed is described in a free-format sentence. The sentence also goes in the emg.json but mayis not be machine-readable (for now, unless AI overtakes us) and requires human interpretation.  
+RULE: The "where on the muscle/body" are the electrodes placed is described in a free-format sentence. The sentence also goes in the emg.json but mayis not be machine-readable (for now, unless AI overtakes us) and requires human interpretation.  
 Where and how EMG signals can be recorded:  
 Single site, single/dual channel  
 Single site, multi channel  
@@ -86,26 +86,26 @@ Multi site, multi channel per site
 
 RULE: electrode positions are described using a RECOMMENDED **photo or drawing**, and using a REQUIRED textual description of the placement procedure, and (sometimes, very rarely) using an OPTIONAL electrode.tsv file with the 3D position recording device like a Polhemus
 
-DEFINITION question: what is a device? If multiple wireless units record synchronously at the same sampling rate, we decide here to refer to that as a “single device”. BIDS-EMG only needs to be defined for a “single device”. When multiple devices are used, these are in separate files, each with separate metadata.  
+DEFINITION question: what is a device? If multiple wireless units record synchronously at the same sampling rate, we decide here to refer to that as a "single device". BIDS-EMG only needs to be defined for a "single device". When multiple devices are used, these are in separate files, each with separate metadata.  
 
-I (= Robert) have noticed both in this paper [https://sci-hub.se/10.1109/taee.2018.8476126](https://sci-hub.se/10.1109/taee.2018.8476126) and in [https://myoware.com/wp-content/uploads/2022/03/MyoWare\_v2\_QuickStartGuide.pdf](https://myoware.com/wp-content/uploads/2022/03/MyoWare_v2_QuickStartGuide.pdf) that the ground electrode is IMHO inconsistently called the reference electrode. If this is a more commonly occuring discrepancy between the EMG field and the other biopotential fields (like EEG, iEEG, which are already defined in BIDS), then we must make sure in the specification that ground and ref are properly defined (as we don’t want people to mix them up. This is a search result from a random google that explains the difference consistent with how I have been trained in the terms: [https://www.biopac.com/knowledge-base/ground-vs-reference-for-eeg-recording/](https://www.biopac.com/knowledge-base/ground-vs-reference-for-eeg-recording/). The role of the ground electrode is also nicely explained here [http://eegget-it.nl/eeg\_electrodes.html](http://eegget-it.nl/eeg_electrodes.html). It introduces the terms “single ended” and “differential”. These could be used instead of “without ground” and “with ground” that I introduced above. However, [https://en.wikipedia.org/wiki/Differential\_amplifier](https://en.wikipedia.org/wiki/Differential_amplifier) does make it more complex again, as not all schemas are explicit about the common ground.   
+I (= Robert) have noticed both in this paper [https://sci-hub.se/10.1109/taee.2018.8476126](https://sci-hub.se/10.1109/taee.2018.8476126) and in [https://myoware.com/wp-content/uploads/2022/03/MyoWare\_v2\_QuickStartGuide.pdf](https://myoware.com/wp-content/uploads/2022/03/MyoWare_v2_QuickStartGuide.pdf) that the ground electrode is IMHO inconsistently called the reference electrode. If this is a more commonly occuring discrepancy between the EMG field and the other biopotential fields (like EEG, iEEG, which are already defined in BIDS), then we must make sure in the specification that ground and ref are properly defined (as we don't want people to mix them up. This is a search result from a random google that explains the difference consistent with how I have been trained in the terms: [https://www.biopac.com/knowledge-base/ground-vs-reference-for-eeg-recording/](https://www.biopac.com/knowledge-base/ground-vs-reference-for-eeg-recording/). The role of the ground electrode is also nicely explained here [http://eegget-it.nl/eeg\_electrodes.html](http://eegget-it.nl/eeg_electrodes.html). It introduces the terms "single ended" and "differential". These could be used instead of "without ground" and "with ground" that I introduced above. However, [https://en.wikipedia.org/wiki/Differential\_amplifier](https://en.wikipedia.org/wiki/Differential_amplifier) does make it more complex again, as not all schemas are explicit about the common ground.   
 The example 1 (and the pursuant discussion) demonstrated that an important aspect is whether the EMG montage is monopolar or bipolar. **Considering N channels and M electrodes** for a single amplifier, then    
    
 Bipolar setup: M \= 2\*N \+ 1  
 Unipolar: M  \= N \+ 2
 
-If N (number of channels) \= 1 as in this example, then M=3 in both cases and monopolar and bipolar cannot be distinguished. So this example can be documented either as monopolar or as bipolar. In the discussion it became clear that for a bipolar montage it is “not so” relevant to describe which electrode is the reference. In a monopolar montage the location of the reference MUST be documented, as very often the data must be re-referenced to a bipolar montage in the analysis.
+If N (number of channels) \= 1 as in this example, then M=3 in both cases and monopolar and bipolar cannot be distinguished. So this example can be documented either as monopolar or as bipolar. In the discussion it became clear that for a bipolar montage it is "not so" relevant to describe which electrode is the reference. In a monopolar montage the location of the reference MUST be documented, as very often the data must be re-referenced to a bipolar montage in the analysis.
 
-Since in the discussion on how to document this dataset we did not reach agreement on documenting the reference, the agreement was to document this specific dataset it as a “bipolar” recording, making the reference optional. 
+Since in the discussion on how to document this dataset we did not reach agreement on documenting the reference, the agreement was to document this specific dataset it as a "bipolar" recording, making the reference optional. 
 
 Number of channels, number of electrodes and monopolar/bipolar have some redundancy, since M\_bipolar \= 2\*N+1 and M\_monopolar \= N \+ 2\. We can choose to keep this redundancy, like a [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) it allows to check internal consistency.     
 
-The examples in 6 and 7 actually don’t fit these two equations, because they don’t have a shared ground between sensors (in 7\) and/or don’t even have a ground (as in 6). I do believe the equations to hold for examples 1, 2, 3, 4 and probably also 5\. The two equations are to be extended with
+The examples in 6 and 7 actually don't fit these two equations, because they don't have a shared ground between sensors (in 7\) and/or don't even have a ground (as in 6). I do believe the equations to hold for examples 1, 2, 3, 4 and probably also 5\. The two equations are to be extended with
 
 Bipolar without ground M \= 2\*N  
 Unipolar without ground M \= N \+ 1
 
-Should we therefore document the montage as a string that is taken from the list with length 4 \[‘bipolar with ground’, ‘unipolar with ground’, ‘bipolar without ground’, ‘unipolar without ground’\].
+Should we therefore document the montage as a string that is taken from the list with length 4 \['bipolar with ground', 'unipolar with ground', 'bipolar without ground', 'unipolar without ground'\].
 
 ## Example 1 (custom-made bipolar system)
 
@@ -118,7 +118,7 @@ See [https://www.semanticscholar.org/paper/Design-of-a-Low-Cost-Robotic-Arm-cont
 
 #### *Textual description*
 
-“*EMG was recorded from the **flexors of the lower arm close to the elbow** using a **bipolar montage** with **one channel**. A pair of two electrodes was **placed 20 mm apart** where the **center of the pair was placed at 50 % on the line between the posterior crista of the acromion and the olecranon at 2 finger widths lateral to the line.** The **orientation of the electrode pair was aligned in parallel with the fiber orientation** of the muscle.. The third **ground electrode** was placed on the medial bony landmark of the elbow.”*
+"*EMG was recorded from the **flexors of the lower arm close to the elbow** using a **bipolar montage** with **one channel**. A pair of two electrodes was **placed 20 mm apart** where the **center of the pair was placed at 50 % on the line between the posterior crista of the acromion and the olecranon at 2 finger widths lateral to the line.** The **orientation of the electrode pair was aligned in parallel with the fiber orientation** of the muscle.. The third **ground electrode** was placed on the medial bony landmark of the elbow."*
 
 #### *Proposed machine-readable metadata in a JSON or TSV file*
 
@@ -160,7 +160,7 @@ See [https://logemas.com/knowledge-base/faq/how-do-i-attach-my-emg-sensors/](htt
 
 #### *Textual description*
 
-“6 bipolar EMG modules were placed on the right arm. 5 were placed on the lower arm and one was placed on the hand. See channels.tsv for the mapping between channels and muscles.”  
+"6 bipolar EMG modules were placed on the right arm. 5 were placed on the lower arm and one was placed on the hand. See channels.tsv for the mapping between channels and muscles."  
 
 #### *Proposed machine-readable metadata in a JSON or TSV file*
 
@@ -206,7 +206,7 @@ See [https://www.isca-archive.org/interspeech\_2006/jou06\_interspeech.pdf](http
 
 #### *Textual description:* 
 
-“Multiple electrodes were placed over the lower face to record from the articulatory muscles.”
+"Multiple electrodes were placed over the lower face to record from the articulatory muscles."
 
 #### *Proposed machine-readable metadata in a JSON or TSV file*
 
@@ -227,7 +227,7 @@ EMG6 \= tongue
 
 ### Discussion:
 
-There is in general a ***many-to-many*** mapping between sensors and muscles: one muscle can be recorded by multiple channels, and multiple channels can record one muscle’s activity. So, both target muscles and electrodes location wrt to the muscles are important.
+There is in general a ***many-to-many*** mapping between sensors and muscles: one muscle can be recorded by multiple channels, and multiple channels can record one muscle's activity. So, both target muscles and electrodes location wrt to the muscles are important.
 
 Descriptions of electrode location should reflect the process by which electrodes were placed. For example, surface muscles on physically fit subjects may be located visually; smaller or deeper muscles (or subjects with less muscular definition) may require palpation to determine location of the muscle. In extreme cases, functional localization (temporary electrode placement during prescribed contractions to determine which location yields optimal EMG signal) may be employed.
 
@@ -235,7 +235,7 @@ Target Muscles and electrode placement are not necessarily identical. There migh
 
 Skeletal (bony) references are used for EEG electrode placement. They can also be used for muscles that attach directly to the skeleton or skull. Many facial muscles (used for expression and therefore often studied in relation to cognitive neuroscience and communication) attach only to soft tissue. Also sphincter muscles are not attached to bone.      
 
-Electrode (when monopolar) or electrode pair (aka channel) placement (when bipolar) can be according to a systematic procedure using landmarks and numerical coordinates (**Anatomical/Landmark localizer**), to a systematic procedure using fractions (that imply scaling to the participant, like “Slightly medial of the distal 1/4 of the 1st ossa metacarpalia (SENIAM)”), or according to a **functional localizer** and for example palpating.
+Electrode (when monopolar) or electrode pair (aka channel) placement (when bipolar) can be according to a systematic procedure using landmarks and numerical coordinates (**Anatomical/Landmark localizer**), to a systematic procedure using fractions (that imply scaling to the participant, like "Slightly medial of the distal 1/4 of the 1st ossa metacarpalia (SENIAM)"), or according to a **functional localizer** and for example palpating.
 
 Should we request the method that the fucntional/anatomical localizer is used? Example palpation may be functional but it is different from asking the perosn to move or contract their muscle and then locate the muscle.
 
@@ -246,17 +246,17 @@ Here is an example dataset (through google dataset search):
 Example 3 (probably)
 
 [https://data.mendeley.com/datasets/ckwc76xr2z/2](https://data.mendeley.com/datasets/ckwc76xr2z/2)  
-The placement information that is provided is *“The approximate locations of four forearm muscles were determined by an expert physician.” 😒*
+The placement information that is provided is *"The approximate locations of four forearm muscles were determined by an expert physician." 😒*
 
 Here another example:   
 [10.5281/zenodo.5189274](https://doi.org/10.5281/zenodo.5189274)  
-Placement information consists of: *“Each subject wore the Myo-armband on the forearm. Electrodes were aligned along the palm side of the wrist with Ch4 placed on Pronator Teres muscle as shown in Figure 1 (and a photo is shown).”*
+Placement information consists of: *"Each subject wore the Myo-armband on the forearm. Electrodes were aligned along the palm side of the wrist with Ch4 placed on Pronator Teres muscle as shown in Figure 1 (and a photo is shown)."*
 
 Anatomical/landmark localizer example:
 
 Example 5: The electrodes were placed approximately 3 cm from elbow (elbow to closest electrode corner) and 2 cm from ulna (edge of the ulna to edge of the electrode).
 
-Recording from the back muscles usually use “anatomical” localizers, for example:  
+Recording from the back muscles usually use "anatomical" localizers, for example:  
 [https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0287588](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0287588):Trigno EMGs sensors (Delsys Inc, Boston, MA) placed at L3 height and about 3cm left and right from the spinous process.
 
 Placement according to SENIAM maybe also categorized as anatomical localizers:  
@@ -321,7 +321,7 @@ The difference between this example and example 2 are:
 
 #### *Textual description:*
 
-“EMG was recorded on the face over the left cheek and jaw area with a high-density electrode grid” 
+"EMG was recorded on the face over the left cheek and jaw area with a high-density electrode grid" 
 
 #### *Proposed machine-readable metadata in a JSON or TSV file*
 
@@ -335,7 +335,7 @@ What orientation \= ???
 
 It is an 8x8 electrode grid with a common reference (on the left mastoid). The presence or placement of a ground electrode is not specified. Assuming data is stored in BIDS, how should we know which channel is which, and how would I make in the processing off-line bipolar montages in the horizontal and/or vertical direction? Is there any way of documenting this without a photo or drawing?
 
-This example also requires documenting that most electrodes are arranged here in a grid, the number of rows and columns, IED along rows, IED along columns, how the grid is angled relative to the anatomy, and how channel numbers relate to the grid (row-first, column-first, etc). Do these details go in a controlled field, or in a free text string? One idea is to specify the anatomical location (e.g., relative to bony landmarks) of only one electrode in the grid (probably a corner electrode), and then describe the location of all other electrodes in the grid in `electrodes.tsv` (specified ***relative*** to the location of the landmarked electrode, which will have **coordinates (0,0)** in the `electrodes.tsv` file).  One advantage of this is that you get the *numbering scheme* of the electrodes (row-wise, column-wise, snake-wise, etc) for free, as this could be inferred from electrode names and coordinates in `electrodes.tsv`. This approach would require indicating that a given `electrodes.tsv` file included such relative coordinate values (probably in electrodes.json). If multiple relative-coordinate grids are present, the grouping of which electrodes are in which grid must be specified (probably with an extra column, `grid` or similar) within a single `electrodes.tsv` file (e.g., single file but with two grids at two different locations with two relative landmarks)? (note that this is a separate question from how the data are ultimately “packaged” by the downstream readers, i.e., they may choose to split up the electrode grids each into a separate array).  
+This example also requires documenting that most electrodes are arranged here in a grid, the number of rows and columns, IED along rows, IED along columns, how the grid is angled relative to the anatomy, and how channel numbers relate to the grid (row-first, column-first, etc). Do these details go in a controlled field, or in a free text string? One idea is to specify the anatomical location (e.g., relative to bony landmarks) of only one electrode in the grid (probably a corner electrode), and then describe the location of all other electrodes in the grid in `electrodes.tsv` (specified ***relative*** to the location of the landmarked electrode, which will have **coordinates (0,0)** in the `electrodes.tsv` file).  One advantage of this is that you get the *numbering scheme* of the electrodes (row-wise, column-wise, snake-wise, etc) for free, as this could be inferred from electrode names and coordinates in `electrodes.tsv`. This approach would require indicating that a given `electrodes.tsv` file included such relative coordinate values (probably in electrodes.json). If multiple relative-coordinate grids are present, the grouping of which electrodes are in which grid must be specified (probably with an extra column, `grid` or similar) within a single `electrodes.tsv` file (e.g., single file but with two grids at two different locations with two relative landmarks)? (note that this is a separate question from how the data are ultimately "packaged" by the downstream readers, i.e., they may choose to split up the electrode grids each into a separate array).  
 
 A more difficult case is when the data from the grids are natively stored in separate files and *cannot easily be munged into a single data file (probably can be addressed in different acquisitions)*, which raises the question of whether they should *also* have separate corresponding `electrodes.tsv` files. This issue will become very prominent in Example 8, where the grids (or other multi-electrode collections) are of different manufacturers and may have different sampling frequencies, etc, making it near-impossible to munge the data into a single file.    
 
@@ -373,9 +373,9 @@ Made in-house at NYU (by Yahya) to reproduce [s41597-021-00843-9](https://doi.or
 
 #### *Textual description:*
 
-“EMG was recorded with a high-density grid from both the palmar and the dorsal side of the lower arm.” 
+"EMG was recorded with a high-density grid from both the palmar and the dorsal side of the lower arm." 
 
-Two HD-sEMG electrodes were positioned on the dorsal and the volar aspects of the forearm with the inten- tion to cover, or partially cover, the main fingers flexors and extensors (flexor digitorum profundus – responsible  for flexion of fingers D2-D5, extensor digitorum communis – responsible for extension of fingers D2-D5), wrist  flexor/extensor (flexor carpi radialis, flexor carpi ulnaris – responsible for wrist flexion, extensor carpi radialis  longus, extensor carpi ulnaris – responsible for wrist extension) and pronator/supinator (pronator teres, supina- tor), and thumb flexor/extensor (flexor pollicis longus – responsible for thumb flexion, extensor pollicis longus  – responsible for thumb extension) and thumb abduction (abductor pollicis longus). As the HD-sEMG electrodes  can cover a relatively large area, the positioning of the electrodes was guided by physiological landmarks, such as  distance from the elbow for the distal placement, and distance from the ulna for radial orientation. The electrodes  were placed approximately 3 cm from elbow (elbow to closest electrode corner) and 2 cm from ulna (edge of the  ulna to edge of the electrode).
+Two HD-sEMG electrodes were positioned on the dorsal and the volar aspects of the forearm with the inten- tion to cover, or partially cover, the main fingers flexors and extensors (flexor digitorum profundus - responsible  for flexion of fingers D2-D5, extensor digitorum communis - responsible for extension of fingers D2-D5), wrist  flexor/extensor (flexor carpi radialis, flexor carpi ulnaris - responsible for wrist flexion, extensor carpi radialis  longus, extensor carpi ulnaris - responsible for wrist extension) and pronator/supinator (pronator teres, supina- tor), and thumb flexor/extensor (flexor pollicis longus - responsible for thumb flexion, extensor pollicis longus  - responsible for thumb extension) and thumb abduction (abductor pollicis longus). As the HD-sEMG electrodes  can cover a relatively large area, the positioning of the electrodes was guided by physiological landmarks, such as  distance from the elbow for the distal placement, and distance from the ulna for radial orientation. The electrodes  were placed approximately 3 cm from elbow (elbow to closest electrode corner) and 2 cm from ulna (edge of the  ulna to edge of the electrode).
 
 #### *Proposed machine-readable metadata in a JSON or TSV file*
 
@@ -481,12 +481,12 @@ What orientation \= ???
 
 Discussion:
 
-**Would the recordings of all sensors/systems go in a single data file, or in multiple data files like for motion capture with different “tracking systems” (see below)?**
+**Would the recordings of all sensors/systems go in a single data file, or in multiple data files like for motion capture with different "tracking systems" (see below)?**
 
 * If in multiple data files, then each data file has its own metadata sidecar files, and we only have to solve the metadata for each sensor/system separately.  
 * Should we consider a case that all EMG recordings are in a single file? If no, what is the limit? Many systems (Delsys, TMSi, OTB) will record EMG files in a single file, irrespective of how many channels there are or if they are bipolar or unipolar, as long as they are from the same manufacturer.
 
-The [BIDS-motion](https://bids-specification.readthedocs.io/en/stable/modality-specific-files/motion.html) standard defines a tracking system as: *“A tracking system is defined as a group of motion channels that share hardware properties (the recording device) and software properties (the recording duration and number of samples). For example, if the position time series of multiple optical markers is processed via one recording unit, this MAY be defined as a single tracking system. Note that it is not uncommon to have multiple tracking systems to record at the same time”* and specifies *“Motion data from one tracking system MUST be stored in a single \*\_motion.tsv file“.* 
+The [BIDS-motion](https://bids-specification.readthedocs.io/en/stable/modality-specific-files/motion.html) standard defines a tracking system as: *"A tracking system is defined as a group of motion channels that share hardware properties (the recording device) and software properties (the recording duration and number of samples). For example, if the position time series of multiple optical markers is processed via one recording unit, this MAY be defined as a single tracking system. Note that it is not uncommon to have multiple tracking systems to record at the same time"* and specifies *"Motion data from one tracking system MUST be stored in a single \*\_motion.tsv file".* 
 
 A separately placed IMU sensor with 3 accelerometers and 3 gyros like the ones in example 6/7 are considered a single tracking system. The motion capture with reflective spheres in example 7 is considered a single tracking system (since one pair of synchronized stereo cameras).
 
@@ -539,7 +539,7 @@ Metadata Keys:
 Paper: emg2qwerty: A Large Dataset with Baselines for Touch Typing using Surface Electromyography [https://arxiv.org/pdf/2410.20081](https://arxiv.org/pdf/2410.20081)
 
 Description from paper:   
-*Figure 1: Left: An example surface electromyographic (sEMG) recording for the prompt “the quick brown fox” showing 32-channel sEMG signals from left and right wristbands, along with key-press times. Vertical lines indicate keystroke onset. The signal from each electrode channel is high-pass filtered. Right: The sEMG research device (sEMG-RD) used for data collection together with a schematic denoting the electrode placement around the wrist circumference. The left and right wristbands are worn such that one is a mirror of the other, and therefore the positioning of the electrodes around the wrist physiology remains the same, albeit with a reversed electrode polarity with respect to the wrist.*
+*Figure 1: Left: An example surface electromyographic (sEMG) recording for the prompt "the quick brown fox" showing 32-channel sEMG signals from left and right wristbands, along with key-press times. Vertical lines indicate keystroke onset. The signal from each electrode channel is high-pass filtered. Right: The sEMG research device (sEMG-RD) used for data collection together with a schematic denoting the electrode placement around the wrist circumference. The left and right wristbands are worn such that one is a mirror of the other, and therefore the positioning of the electrodes around the wrist physiology remains the same, albeit with a reversed electrode polarity with respect to the wrist.*
 
 *All data were recorded using the sEMG research device (sEMG-RD) described in CTRL-labs at Reality Labs et al. (2024) and visualized in Figure 1\. Each sEMG-RD has 16 differential  electrode pairs utilizing dry gold-plated electrodes. Signals are sampled at 2 kHz with a bit depth of 12 bits and a maximum signal amplitude of 6.6 mV. Measurements are bandpass filtered with \-3 dB cutoffs at 20 Hz and 850 Hz before digitization. Data are digitized on the sEMG-RD and*  
 *streamed via Bluetooth to the laptop that the subject is simultaneously typing on. Identical devices are worn on the left and right wrists, with the same electrode indices aligning with the same anatomical features, but the polarity of the differential sensing reversed.*
