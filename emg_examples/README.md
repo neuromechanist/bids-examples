@@ -71,11 +71,3 @@ This dataset serves as a reference implementation showing how different EMG reco
 ## Usage
 
 These examples can be used as templates when converting EMG data to BIDS format. The metadata fields and documentation approaches shown here cover common EMG recording scenarios.
-
-## License
-
-[Add license information]
-
-## References
-
-[Add relevant references]
