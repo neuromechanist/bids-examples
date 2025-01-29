@@ -1,5 +1,5 @@
-name	type	units	reference	group
-EMG1	emg	V	E1, R1	Grid1
+name	type	units	reference	group  electrodes
+EMG1	emg	V	R1	Grid1  E1
 EMG2	emg	V	E2, R1	Grid1
 EMG3	emg	V	E3, R1	Grid1
 EMG4	emg	V	E4, R1	Grid1
