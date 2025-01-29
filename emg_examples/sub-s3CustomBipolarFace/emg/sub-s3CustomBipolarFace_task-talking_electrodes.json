@@ -1,0 +1,7 @@
+{
+    "Coordsystem": {
+        "EEGCoordinateUnits": "mm",
+        "EEGCoordinateSystem": "CTF",
+        "EEGCoordinateSystemDescription": "EEGLAB"
+    }
+}
