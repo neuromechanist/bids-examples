@@ -1,4 +1,4 @@
-name	type	units	reference	interelectrode_distance	target_muscle	placement
+name	type	units	reference	interelectrode_distance	target_muscle	electrodes
 EMG1	emg	V	bipolar	n/a	tongue, anterior belly of the digastric 	E1, E2
 EMG2	emg	V	bipolar	20 mm	levator angulis oris, zygomaticus major 	E3, E4
 EMG3	emg	V	bipolar	n/a	levator angulis oris, zygomaticus major	E5, E6
