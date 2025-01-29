@@ -1,5 +1,4 @@
 name	x	y	z	loc_reference	group
-E1	5	80	80	forearm-coordsystem	Grid1
 E1	0	0	0	grid-coordsystem	Grid1
 E2	0	8	0	grid-coordsystem	Grid1
 E3	0	16	0	grid-coordsystem	Grid1
