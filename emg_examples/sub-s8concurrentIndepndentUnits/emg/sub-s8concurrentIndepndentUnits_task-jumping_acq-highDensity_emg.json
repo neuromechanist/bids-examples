@@ -12,7 +12,7 @@
 	"RecordingDuration":1.00,
 	"SamplingFrequency":2000,
     "HardwareFilters":"n/a",
-	"TaskDescription":"Subject performed isometric finger press tasks with multiple combinations of fingers.",
-	"TaskName":"isometric",
+	"TaskDescription":"Subject performs single-leg jumping for 30 seconds.",
+	"TaskName":"jumping",
 	"TriggerChannelCount":0
 }
