@@ -1,7 +1,7 @@
-name	type	units	reference	interelectrode_distance	target_muscle	electrodes
-EMG1	emg	V	bipolar	n/a	tongue, anterior belly of the digastric 	E1, E2
-EMG2	emg	V	bipolar	20 mm	levator angulis oris, zygomaticus major 	E3, E4
-EMG3	emg	V	bipolar	n/a	levator angulis oris, zygomaticus major	E5, E6
-EMG4	emg	V	bipolar	n/a	platysma	E7, E8
-EMG5	emg	V	bipolar	n/a	orbicularis oris	E9, E10
-EMG6	emg	V	bipolar	20 mm	tongue	E11, E12
+name	type	units	reference	target_muscle	interelectrode_distance	signal_electrode
+EMG1	emg	V	E2	tongue, anterior belly of the digastric	n/a	E1
+EMG2	emg	V	E4	levator angulis oris, zygomaticus major	20 mm	E3
+EMG3	emg	V	E6	levator angulis oris, zygomaticus major	n/a	E5
+EMG4	emg	V	E8	platysma	n/a	E7
+EMG5	emg	V	E10	orbicularis oris	n/a	E9
+EMG6	emg	V	E12	tongue	20 mm	E11
