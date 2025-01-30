@@ -1,0 +1,12 @@
+{
+    "Coordsystem": {
+        "hand-coordsystem":{ 
+            "EMGCoordinateUnits": "percent",
+            "EMGCoordinateSystemDescription": "X: RSP → USP; Y: Dorsal → Palmar surface at the midpoint RSP-USP; Z: MCP → midpoint RSP-USP; Ulnar Styloid Process (USP), Radial Styloid Process (RSP); Ulnar Styloid Process (USP);Third Metacarpophalangeal Joint (MCP): The knuckle of the middle finger"
+        },
+        "lower-leg-coordsystem":{ 
+            "EMGCoordinateUnits": "percent",
+            "EMGCoordinateSystemDescription": "X: FME → FLE; Y: Popliteal Fossa → Patellar Anterior Surface; Z: midpoint FME-FLE → Greater Trochanter; Femur Medial Epicondyle (FME); Femur Lateral Epicondyle (FLE); Patellar Anterior Surface; Back of the knee (Popliteal Fossa)"
+        }
+    }
+}
