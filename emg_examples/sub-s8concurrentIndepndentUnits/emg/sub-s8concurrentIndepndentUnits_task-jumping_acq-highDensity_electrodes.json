@@ -23,7 +23,7 @@
             "EMGCoordSysAnchor":{
                 "System": "forearm-coordsystem",
                 "AnchorElectrode": "E70",
-                "AnchorCoordinate": [80,1000,50]
+                "AnchorCoordinate": [80,100,50]
             }
         }
     }
