@@ -18,7 +18,7 @@
             "EMGCoordinateSystemDescription": "The location of the electgrodes with respect to electrode one (1) is given in millimeters. The x-axis is left to right, the y-axis is bottom to top. note: the z-axis is not used.",
             "EMGCoordSysAnchor":{
                 "System": "forearm-coordsystem",
-                "AnchorElectrode": "E1",
+                "AnchorElectrode": "E65",
                 "AnchorCoordinate": [10,0,80]
             }
         }

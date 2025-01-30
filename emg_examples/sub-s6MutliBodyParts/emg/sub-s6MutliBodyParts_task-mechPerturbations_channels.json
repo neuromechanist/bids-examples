@@ -6,7 +6,7 @@
         },
         "lower-leg-coordsystem":{ 
             "EMGCoordinateUnits": "percent",
-            "EMGCoordinateSystemDescription": "X: FME → FLE; Y: Popliteal Fossa → Patellar Anterior Surface; Z: midpoint FME-FLE → Greater Trochanter; Femur Medial Epicondyle (FME); Femur Lateral Epicondyle (FLE); Patellar Anterior Surface; Back of the knee (Popliteal Fossa)"
+            "EMGCoordinateSystemDescription": "X: LM → MM; Y: Popliteal Fossa → Patellar Anterior Surface; Z: midpoint MM-LM → Patellar Anterior Surface; Lateral Malleolus (LM); Medial Malleolus (MM); Patellar Anterior Surface Back of the knee (Popliteal Fossa)"
         }
     }
 }
