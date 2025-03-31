@@ -1,6 +1,6 @@
 {
 	"EMGChannelCount":1,
-	"EMGPlacementScheme":"The bipolar electrode was palced on Retus Femoris according to SENIAM.",
+	"EMGPlacementScheme":"The bipolar electrode was placed on Retus Femoris according to SENIAM.",
 	"EMGReference":"bipolar",
 	"EMGGround":"n/a",
     "EMGElectrodeCount":4,

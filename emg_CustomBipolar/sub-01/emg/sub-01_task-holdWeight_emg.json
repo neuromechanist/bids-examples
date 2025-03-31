@@ -10,7 +10,7 @@
     "AmpifierType":"Wired",
 	"RecordingDuration":1.00,
 	"SamplingFrequency":2000,
-	"TaskDescription":"The subject was holding an object with differnt weights for 5 seconds.",
+	"TaskDescription":"The subject was holding an object with different weights for 5 seconds.",
 	"TaskName":"holdWeight",
 	"TriggerChannelCount":0
 }
