@@ -1,0 +1,46 @@
+{
+	"SkinPreparation": "The skin was shaved, abrased and cleansed with 70 percent ethyl alcohol",
+	"EMGPlacementScheme":"TODO",
+	"EMGReference": "Wet reference band placed at the ankle of the same leg",
+	"EMGGround":"Wet ...",
+	"EMGElectrodeGroups": {
+		"Grid 1": {
+			"ElectrodeType": "High-desnity surface EMG grid",
+			"ElectrodeManufacturer": "OTBioelettronica",
+			"ElectrodeManufacturerModelName": "GR04MM1305",
+			"InterelectrodeDistance": "4 mm",
+			"ElectrodeMaterial": {
+				"ElectrodeContacts": "gold coated",
+				"BaseMaterial": "TODO"
+			},
+			"GridShape": [13, 5]
+		},
+		"Grid 2": {
+			"ElectrodeType": "Thin filament high-density invasive EMG grid",
+			"ElectrodeManufacturer": "Custom",
+			"InterelectrodeDistance": "TODO",
+			"ElectrodeSurfaceArea": "TODO",
+			"ElectrodeMaterial": {
+				"ElectrodeContacts": "gold",
+				"BaseMaterial": "TODO"
+			},
+			"InsulatorMaterial": "TODO",
+			"CannulaSize": "25G",
+			"GridShape": [40, 1]
+		}
+	},
+	"EMGChannelCount": 104,
+    "EMGElectrodeCount": 106,
+	"MISCChannelCount": 2,
+	"MISCChannelDescription": {
+		"1": "Requested ankle torque",
+		"2": "Performed ankle torque"
+	},
+	"PowerLineFrequency": 50,
+	"Manufacturer": "OTBioelettronica",
+	"ManufacturersModelName":"QUATTROCENTO",
+	"RecordingDuration": 60.00,
+	"SamplingFrequency": 10240,
+	"TaskDescription":"TODO",
+	"TaskName":"Isometric ramp-and-hold"
+}

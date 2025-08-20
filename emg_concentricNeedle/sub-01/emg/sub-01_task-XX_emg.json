@@ -1,0 +1,30 @@
+{
+	"EMGPlacementScheme":"TODO",
+	"ElectrodeType": "Concentric needle",
+	"ElectrodeSurfaceArea": "TODO",
+	"ElectrodeMaterial": {
+		"Core": "TODO",
+		"Insulation": "TODO",
+		"Shaft": "TODO"
+	},
+	"NeedleSize": "25G",
+	"ElectrodeManufacturer": "Some name",
+	"EMGReference":"bipolar",
+	"EMGGround":"Cannula shaft",
+	"EMGChannelCount":1,
+    "EMGElectrodeCount":2,
+	"PowerLineFrequency": 50,
+	"Manufacturer":"Amplifier manufacurer",
+	"ManufacturersModelName":"Amplifier model",
+	"RecordingDuration":30.00,
+	"SamplingFrequency":30000,
+	"SoftwareFilters":{
+		"Bandpass": {
+			"high_pass": 500,
+			"low_pass": 10000
+		}
+	},
+	"TaskDescription":"The subject was asked to relax the muscle",
+	"TaskName":"PSA examination",
+	"TriggerChannelCount":0
+}
