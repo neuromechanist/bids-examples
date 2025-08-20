@@ -1,2 +1,105 @@
 name	type	units	description	sampling_frequency	target_muscle	low_cutoff	high_cutoff
-EMG1	EMG	V	concentric needle	30000	ADM	10000	500
+1	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+2	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+3	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+4	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+5	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+6	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+7	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+8	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+9	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+10	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+11	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+12	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+13	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+14	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+15	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+16	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+17	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+18	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+19	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+20	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+21	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+22	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+23	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+24	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+25	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+26	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+27	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+28	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+29	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+30	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+31	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+32	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+33	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+34	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+35	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+36	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+37	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+38	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+39	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+40	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+41	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+42	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+43	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+44	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+45	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+46	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+47	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+48	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+49	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+50	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+51	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+52	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+53	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+54	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+55	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+56	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+57	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+58	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+59	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+60	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+61	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+62	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+63	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+64	EMG	V	Surface Grid	10240	Tibialis anterior	500	20
+65	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+66	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+67	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+68	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+69	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+70	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+71	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+72	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+73	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+74	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+75	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+76	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+77	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+78	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+79	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+80	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+81	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+82	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+83	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+84	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+85	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+86	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+87	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+88	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+89	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+90	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+91	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+92	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+93	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+94	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+95	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+96	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+97	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+98	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+99	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+100	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+101	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+102	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+103	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
+104	EMG	V	Invasive thin film	10240	Tibialis anterior	5000	500
