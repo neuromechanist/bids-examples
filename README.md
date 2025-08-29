@@ -307,6 +307,7 @@ DO NOT EDIT DIRECTLY.
 | [genetics_ukbb](https://github.com/bids-standard/bids-examples/tree/master/genetics_ukbb)                   | multiple tasks, T1w, DTI, BOLD, genetic info                                                | anat, dwi, func                 | FLAIR, T1w, bold, dwi, events, info                                                                            | n/a                                                            | [@cpernet](https://github.com/cpernet)     |
 | [ieeg_visual_multimodal](https://github.com/bids-standard/bids-examples/tree/master/ieeg_visual_multimodal) | n/a                                                                                         | anat, fmap, func, ieeg          | T1w, bold, channels, coordsystem, electrodes, epi, events, ieeg, sbref                                         | n/a                                                            | [@irisgroen](https://github.com/irisgroen) |
 | [synthetic](https://github.com/bids-standard/bids-examples/tree/master/synthetic)                           | A synthetic dataset                                                                         | anat, beh, func                 | T1w, beh, bold, events, physio, scans, sessions, stim                                                          | n/a                                                            | [@effigies](https://github.com/effigies)   |
+| [volume_timing](https://github.com/bids-standard/bids-examples/tree/master/volume_timing)                   | Sparse BOLD acquisitions                                                                    | func                            | bold                                                                                                           | n/a                                                            | [@effigies](https://github.com/effigies)   |
 
 ### MRS
 
@@ -379,3 +380,13 @@ DO NOT EDIT DIRECTLY.
 | name                                                                            | description                                                      | datatypes       | suffixes   | link to full data   | maintained by                            |
 |:--------------------------------------------------------------------------------|:-----------------------------------------------------------------|:----------------|:-----------|:--------------------|:-----------------------------------------|
 | [pheno004](https://github.com/bids-standard/bids-examples/tree/master/pheno004) | Minimal dataset with subjects with imaging and/or phenotype data | phenotype, anat | T1w        | n/a                 | [@ericearl](https://github.com/ericearl) |
+
+### Provenance
+
+<!--
+TABLE BELOW IS GENERATED AUTOMATICALLY.
+DO NOT EDIT DIRECTLY.
+-->
+
+| name   | description   | datatypes   | suffixes   | link to full data   | maintained by   |
+|--------|---------------|-------------|------------|---------------------|-----------------|

@@ -33,6 +33,7 @@ ds116	multiple tasks, multiple runs	[link](https://openneuro.org/datasets/ds0001
 ds210	multiple tasks, multiple runs	[link](https://openneuro.org/datasets/ds000210/versions/00002)		func	bold, physio
 hcp_example_bids		[link](https://bit.ly/2H0Z6Qt)	[@robertoostenveld](https://github.com/robertoostenveld)	anat, fmap	T1w, T2w, magnitude1, magnitude2, phasediff
 synthetic	A synthetic dataset		[@effigies](https://github.com/effigies)	anat, beh, func	T1w, beh, bold, events, physio, scans, sessions, stim
+volume_timing	Sparse BOLD acquisitions		[@effigies](https://github.com/effigies)	func	bold
 ds000001-fmriprep	Common derivatives example	[link](https://openneuro.org/datasets/ds000001/versions/1.0.0)	[@effigies](https://github.com/effigies)	n/a	n/a
 ds004332	Anat dataset with task entity	[link](https://openneuro.org/datasets/ds004332/versions/1.0.2)	[@Remi-Gau](https://github.com/Remi-Gau)	anat	FLAIR, T1w, T2starw, T2w
 asl001	T1w, asl (GE, PCASL, 3D_SPIRAL), m0scan within timeseries	[link](https://osf.io/yru2q/)	[@patsycle](https://github.com/patsycle)	anat, perf	T1w, asl, aslcontext, asllabeling
@@ -90,3 +91,4 @@ emg_MutliBodyParts	EMG recording from multiple body parts with different electro
 emg_TwoHDsEMG	High-density EMG grid recordings from two body parts demonstrating grid placement documentation	emg	channels, electrodes, emg	n/a	@neuromechanist
 emg_TwoWristbands	EMG recordings using two wristbands with dry electrodes to capture forearm muscle activity	emg	channels, coordsystem, electrodes, emg	n/a	@neuromechanist
 emg_concurrentIndepndentUnits	Concurrent EMG recording with multiple independent recording units at different sampling rates	emg	channels, electrodes, emg, events	n/a	@neuromechanist
+mri_chunk	Example MRI dataset to illustrate BIDS chunk entity. A single subject, two chunks.		[@valosekj](https://github.com/valosekj)	anat	T1w
