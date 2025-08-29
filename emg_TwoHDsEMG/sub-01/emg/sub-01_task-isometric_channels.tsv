@@ -1,4 +1,4 @@
-name	type	units	reference	target_muscle	group	signal_electrode
+name	type	units	reference_electrode	target_muscle	group	signal_electrode
 EMG1	EMG	V	R1	forearm flexors	Grid1	E1
 EMG2	EMG	V	R1	forearm flexors	Grid1	E2
 EMG3	EMG	V	R1	forearm flexors	Grid1	E3
