@@ -16,15 +16,14 @@ emg_concurrentIndepndentUnits/
 ├── README.md
 └── sub-01/
     └── emg/
-        ├── sub-01_task-jumping_acq-bipolar_channels.json
-        ├── sub-01_task-jumping_acq-bipolar_channels.tsv
-        ├── sub-01_task-jumping_acq-bipolar_emg.edf
-        ├── sub-01_task-jumping_acq-bipolar_emg.json
-        ├── sub-01_task-jumping_acq-highDensity_channels.tsv
-        ├── sub-01_task-jumping_acq-highDensity_electrodes.json
-        ├── sub-01_task-jumping_acq-highDensity_electrodes.tsv
-        ├── sub-01_task-jumping_acq-highDensity_emg.edf
-        ├── sub-01_task-jumping_acq-highDensity_emg.json
+        ├── sub-01_task-jumping_recording-bipolar_channels.tsv
+        ├── sub-01_task-jumping_recording-bipolar_emg.edf
+        ├── sub-01_task-jumping_recording-bipolar_emg.json
+        ├── sub-01_task-jumping_recording-highDensity_channels.tsv
+        ├── sub-01_task-jumping_recording-highDensity_coordsystem.json
+        ├── sub-01_task-jumping_recording-highDensity_electrodes.tsv
+        ├── sub-01_task-jumping_recording-highDensity_emg.edf
+        ├── sub-01_task-jumping_recording-highDensity_emg.json
         ├── sub-01_task-jumping_events.json
         └── sub-01_task-jumping_events.tsv
 ```
