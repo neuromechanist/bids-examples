@@ -16,17 +16,17 @@ emg_concurrentIndependentUnits/
 ├── README.md
 └── sub-01/
     └── emg/
-        ├── sub-01_task-jumping_recording-bipolar_channels.json
+        ├── sub-01_photo.png
+        ├── sub-01_recording-highDensity_coordsystem.json
+        ├── sub-01_recording-highDensity_electrodes.tsv
+        ├── sub-01_task-jumping_events.json
+        ├── sub-01_task-jumping_events.tsv
         ├── sub-01_task-jumping_recording-bipolar_channels.tsv
         ├── sub-01_task-jumping_recording-bipolar_emg.edf
         ├── sub-01_task-jumping_recording-bipolar_emg.json
         ├── sub-01_task-jumping_recording-highDensity_channels.tsv
-        ├── sub-01_task-jumping_recording-highDensity_electrodes.json
-        ├── sub-01_task-jumping_recording-highDensity_electrodes.tsv
         ├── sub-01_task-jumping_recording-highDensity_emg.edf
-        ├── sub-01_task-jumping_recording-highDensity_emg.json
-        ├── sub-01_task-jumping_events.json
-        └── sub-01_task-jumping_events.tsv
+        └── sub-01_task-jumping_recording-highDensity_emg.json
 ```
 
 ## Recording Details
