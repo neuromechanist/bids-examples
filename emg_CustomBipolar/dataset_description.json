@@ -1,7 +1,7 @@
 {
   "Name": "EMG Custom Bipolar Example",
   "License": "BSD 3-Clause",
-  "Authors": ["BEP042 Team", ""],
+  "Authors": ["BEP042", "Contributors"],
   "ReferencesAndLinks": ["https://github.com/bids-standard/bids-specification/issues/1371",
                           "https://github.com/bids-standard/bids-specification/pull/1998"],
   "EthicsApprovals": ["Datasets are de-identified hypotheticals and do not require ethics approval."],
