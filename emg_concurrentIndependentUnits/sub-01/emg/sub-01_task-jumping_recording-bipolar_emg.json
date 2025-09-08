@@ -21,7 +21,7 @@
     "RecordingDuration":1.00,
     "RecordingType": "continuous",
     "SamplingFrequency":2000,
-    "SoftwareFilters": "",
+    "SoftwareFilters": "n/a",
     "SoftwareVersions": "0.0.0",
     "SubjectArtefactDescription": "n/a",
     "TaskDescription": "Subject performs single-leg jumping for 30 seconds.",
