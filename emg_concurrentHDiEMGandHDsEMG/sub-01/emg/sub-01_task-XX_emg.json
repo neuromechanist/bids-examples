@@ -1,31 +1,36 @@
 {
 	"SkinPreparation": "The skin was shaved, abrased and cleansed with 70 percent ethyl alcohol",
-	"EMGPlacementScheme":"TODO",
+	"EMGPlacementScheme": {
+		"SurfaceEMG": "TODO", 
+		"InvasiveEMG": "A guiding filament inserted into a 25-gauge needle was used to place the thin-film structure in the muscle. Afterwards, the needle is withdrawn, leaving only the thin-film array within the muscle."
+	},
 	"EMGReference": "Wet reference band placed at the ankle of the same leg",
 	"EMGGround":"Wet ...",
 	"EMGElectrodeGroups": {
-		"Grid 1": {
+		"Grid1": {
 			"ElectrodeType": "High-desnity surface EMG grid",
 			"ElectrodeManufacturer": "OTBioelettronica",
 			"ElectrodeManufacturerModelName": "GR04MM1305",
 			"InterelectrodeDistance": "4 mm",
-			"ElectrodeMaterial": {
-				"ElectrodeContacts": "gold coated",
-				"BaseMaterial": "TODO"
-			},
+			"ElectrodeMaterial": "Gold coated",
 			"GridShape": [13, 5]
 		},
-		"Grid 2": {
-			"ElectrodeType": "Thin filament high-density invasive EMG grid",
+		"Grid2": {
+			"ElectrodeType": "Thin-film high-density invasive EMG grid",
 			"ElectrodeManufacturer": "Custom",
-			"InterelectrodeDistance": "TODO",
-			"ElectrodeSurfaceArea": "TODO",
+			"InterelectrodeDistance": "0.5 mm",
+			"ElectrodeSurfaceArea": "0.0056 mm^2",
 			"ElectrodeMaterial": {
-				"ElectrodeContacts": "gold",
-				"BaseMaterial": "TODO"
+				"ElectrodeContacts": "Platinum coated",
+				"ThinFilmStructure": "Polyimid"
 			},
-			"InsulatorMaterial": "TODO",
-			"CannulaSize": "25G",
+			"ThinFilmStructureGeometry": "U-shaped structure with a length of 70 mm, widths of 0.65 mm (electrode filament) and 0.15 mm (guiding filament) and a thickness of 0.015 mm",
+			"InsertionNeedle": {
+				"CannulaDiameter": "25G",
+				"CannulaLength": "40 mm",
+				"CannulaMaterial": "Stainless steel"
+			},
+			"SterilizationMethod": "Ethylene oxide (EO) sterilization",
 			"GridShape": [40, 1]
 		}
 	},
