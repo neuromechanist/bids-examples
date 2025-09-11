@@ -11,5 +11,7 @@
 	"SamplingFrequency":2000,
 	"HardwareFilters":{"Lowpass": {"Half amplitude cutoff (Hz)": 500}},
 	"TaskDescription":"Subject reaches out to grasp an object with different weights for 5 seconds.",
-	"TaskName":"grasping"
+	"TaskName":"grasping",
+	"PowerLineFrequency":60,
+	"SoftwareFilters":"n/a"
 }
