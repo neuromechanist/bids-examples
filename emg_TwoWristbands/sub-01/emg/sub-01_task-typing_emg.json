@@ -11,5 +11,7 @@
 	"SamplingFrequency":2000,
 	"HardwareFilters":{"Lowpass": {"Half amplitude cutoff (Hz)": 850}, "Highpass": {"Half amplitude cutoff (Hz)": 20}},
 	"TaskDescription":"Subjects were typing on a keyboard while their EMG data was recorded.",
-	"TaskName":"typing"
+	"TaskName":"typing",
+	"PowerLineFrequency":60,
+	"SoftwareFilters":"n/a"
 }
