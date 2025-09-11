@@ -9,23 +9,24 @@ This dataset demonstrates concurrent EMG recording with multiple independent uni
 The dataset includes a single subject with multiple EMG recording units:
 
 ```shell
-emg_concurrentIndepndentUnits/
+emg_concurrentIndependentUnits/
 ├── dataset_description.json
 ├── participants.json
 ├── participants.tsv
 ├── README.md
 └── sub-01/
     └── emg/
+        ├── sub-01_photo.png
+        ├── sub-01_recording-highDensity_coordsystem.json
+        ├── sub-01_recording-highDensity_electrodes.tsv
+        ├── sub-01_task-jumping_events.json
+        ├── sub-01_task-jumping_events.tsv
         ├── sub-01_task-jumping_recording-bipolar_channels.tsv
         ├── sub-01_task-jumping_recording-bipolar_emg.edf
         ├── sub-01_task-jumping_recording-bipolar_emg.json
         ├── sub-01_task-jumping_recording-highDensity_channels.tsv
-        ├── sub-01_task-jumping_recording-highDensity_coordsystem.json
-        ├── sub-01_task-jumping_recording-highDensity_electrodes.tsv
         ├── sub-01_task-jumping_recording-highDensity_emg.edf
-        ├── sub-01_task-jumping_recording-highDensity_emg.json
-        ├── sub-01_task-jumping_events.json
-        └── sub-01_task-jumping_events.tsv
+        └── sub-01_task-jumping_recording-highDensity_emg.json
 ```
 
 ## Recording Details
