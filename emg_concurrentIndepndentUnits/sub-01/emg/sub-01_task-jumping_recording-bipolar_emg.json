@@ -11,5 +11,7 @@
 	"SamplingFrequency":2000,
 	"HardwareFilters":{"Lowpass": {"Half amplitude cutoff (Hz)": 500}},
 	"TaskDescription":"Subject performs single-leg jumping for 30 seconds.",
-	"TaskName":"jumping"
+	"TaskName":"jumping",
+	"PowerLineFrequency":60,
+	"SoftwareFilters":"n/a"
 }
