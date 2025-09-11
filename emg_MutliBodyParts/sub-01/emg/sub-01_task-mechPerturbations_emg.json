@@ -11,5 +11,7 @@
 	"SamplingFrequency":2000,
 	"HardwareFilters":{"Lowpass": {"Half amplitude cutoff (Hz)": 450}, "Highpass": {"Half amplitude cutoff (Hz)": 0.15}},
 	"TaskDescription":"The movement artifacts were analyzed during limb perturbations with EMG sensors attached to both lower and upper limbs",
-	"TaskName":"mechPerturbations"
+	"TaskName":"mechPerturbations",
+	"PowerLineFrequency":60,
+	"SoftwareFilters":"n/a"
 }

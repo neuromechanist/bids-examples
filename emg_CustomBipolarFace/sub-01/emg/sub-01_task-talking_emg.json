@@ -10,5 +10,7 @@
 	"RecordingType":"continuous",
 	"SamplingFrequency":2000,
 	"TaskDescription":"Subject performed speech tasks.",
-	"TaskName":"talking"
+	"TaskName":"talking",
+	"PowerLineFrequency":60,
+	"SoftwareFilters":"n/a"
 }
