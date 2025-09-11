@@ -10,5 +10,7 @@
 	"RecordingType":"continuous",
 	"SamplingFrequency":2000,
 	"TaskDescription":"The subject was holding an object with different weights for 5 seconds.",
-	"TaskName":"holdWeight"
+	"TaskName":"holdWeight",
+	"PowerLineFrequency":60,
+	"SoftwareFilters":"n/a"
 }
