@@ -1,4 +1,4 @@
-name	x	y	z	coordinate_system group
+name	x	y	z	coordinate_system	group
 E1	0	0	0	grid1	Grid1
 E2	0	8	0	grid1	Grid1
 E3	0	16	0	grid1	Grid1
