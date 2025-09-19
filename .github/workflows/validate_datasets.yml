@@ -69,7 +69,7 @@ jobs:
       run: |
         # If unmerged validator PRs are needed for testing, you can use
         # https://github.com/<FORK>/bids-validator/raw/<BRANCH>/bids-validator/src/bids-validator.ts
-        deno install -Agf https://github.com/drammock/bids-validator/raw/feat/add-keys-to-assoc-coordsys/bids-validator/src/bids-validator.ts -n bids-validator
+        deno install -Agf https://github.com/drammock/bids-validator/blob/e6de7389e890ea4c65178052515a3c272932df59/src/bids-validator.ts -n bids-validator
 
     - name: Install BIDS validator (dev)
       if: matrix.bids-validator == 'dev'
@@ -81,7 +81,7 @@ jobs:
         deno compile -A -o $HOME/.deno/bin/bids-validator src/bids-validator.ts
 
     - name: Install BIDS validator (legacy)
-      if: "matrix.bids-validator == 'legacy'"
+      if: matrix.bids-validator == 'legacy'
       run: |
         npm install -g bids-validator
 
@@ -95,7 +95,7 @@ jobs:
         echo "bids-validator"; bids-validator --version
 
     - name: Check that no large files are present
-      if: "matrix.bids-validator == 'stable'"
+      if: matrix.bids-validator == 'stable'
       run: |
         echo "Checking for big files ..."
         found=`find . -not -path "./.git*" -type f -size +500k`
