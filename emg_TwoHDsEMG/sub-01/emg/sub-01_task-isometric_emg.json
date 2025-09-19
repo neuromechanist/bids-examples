@@ -11,5 +11,8 @@
 	"SamplingFrequency":2000,
 	"HardwareFilters":"n/a",
 	"TaskDescription":"Subject performed isometric finger press tasks with multiple combinations of fingers.",
-	"TaskName":"isometric"
+	"TaskName":"isometric",
+	"PowerLineFrequency":60,
+	"SoftwareFilters":"n/a",
+	"Instructions":"Maintain a steady force on the transducer to match the target force level shown on the screen."
 }
