@@ -69,7 +69,7 @@ jobs:
       run: |
         # If unmerged validator PRs are needed for testing, you can use
         # https://github.com/<FORK>/bids-validator/raw/<BRANCH>/bids-validator/src/bids-validator.ts
-        deno install -Agf https://github.com/drammock/bids-validator/blob/e6de7389e890ea4c65178052515a3c272932df59/src/bids-validator.ts -n bids-validator
+         deno install -Agf https://github.com/bids-standard/bids-validator/raw/deno-build/bids-validator.js
 
     - name: Install BIDS validator (dev)
       if: matrix.bids-validator == 'dev'
