@@ -1,15 +1,13 @@
 {
-	"EMGPlacementScheme":"The fine-wires were inserted as pairs using a cannulae to a target depth of 2 cm. After the insertion, the bipolar EMG was visually inspected and if needed the electrode positions were adjusted through light needle moovements. Afterwards, the cannula was removed leaving only the fine wires within the muscle.",
+	"EMGPlacementScheme": "other",
+	"EMGPlacementSchemeDescription":"The fine-wires were inserted as pairs using a cannulae to a target depth of 2 cm. After the insertion, the bipolar EMG was visually inspected and if needed the electrode positions were adjusted through light needle moovements. Afterwards, the cannula was removed leaving only the fine wires within the muscle.",
 	"ElectrodeType": "Fine wire",
-	"ElectrodeSurfaceArea": {
-		"FineWireDiameter": "0.11 mm",
-		"RecordingTipLength": "3 mm"
-	},
-	"InterelectrodeDistance": "Approx. 0.5 mm",
-	"ElectrodeMaterial": {
-		"FineWire": "Stainless steel / Silver",
-		"Insulation": "Polytetrafluoroethylene"
-	},
+	"ElectrodeSurfaceArea": "1.0367 mm^2",
+	"FineWireDiameter": "0.11 mm",
+	"FineWireTipLength": "3 mm",
+	"InterelectrodeDistance": "0.5 mm (approximatly)",
+	"ElectrodeMaterial": "Stainless steel / Silver",
+	"Insulation": "Polytetrafluoroethylene",
 	"InsertionNeedle": {
 		"Diameter": "25G",
 		"CannulaLength": "30 mm",

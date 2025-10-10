@@ -1,5 +1,5 @@
 {
-	"EMGPlacementScheme":"The needle was inserted (perpendicular to the skin) into the proximal part of the ADM targeting an inerstion depth of 1 cm. ",
+	"EMGPlacementScheme":"The needle was inserted (perpendicular to the skin) into the proximal part of the ADM targeting an depth of 1 cm. ",
 	"ElectrodeType": "Concentric needle",
 	"ElectrodeSurfaceArea": "0.07 mm^2",
 	"ElectrodeMaterial": {
