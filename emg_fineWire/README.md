@@ -2,8 +2,6 @@
 
 This dataset demonstrates documentation of a invasive fine wire EMG recording:
 - Single channel bipolar montage
-- ...
-- ...sub
 
 ## Dataset Structure
 
@@ -24,7 +22,7 @@ emg_fineWire/
 
 ## Recording Details
 
-- **Electrode Setup**: Concentric needle EMG recording from XX
-- **Task**: Sponatneous muscle acivity screening
+- **Electrode Setup**: Invasive fine wire electrode
+- **Task**: Isometric contraction
 - **Electrode Placement**: TODO
-- **Inter-electrode Distance**: TODO
+- **Inter-electrode Distance**: appox. 4 mm
