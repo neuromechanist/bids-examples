@@ -173,13 +173,13 @@ DO NOT EDIT DIRECTLY.
 
 | name                                                                                                          | description                                                                                           | datatypes   | suffixes                                                          | link to full data | maintained by                        |
 |:--------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------|:------------|:------------------------------------------------------------------|:------------------|:-------------------------------------|
+| [emg_ConcurrentIndependentUnits](https://github.com/bids-standard/bids-examples/tree/master/emg_ConcurrentIndependentUnits) | Concurrent EMG recording with multiple independent recording units at different sampling rates | emg         | channels, electrodes, coordsystem, emg, events             | n/a               | [@neuromechanist](https://github.com/neuromechanist) |
 | [emg_CustomBipolar](https://github.com/bids-standard/bids-examples/tree/master/emg_CustomBipolar)             | Custom-made bipolar EMG recording setup with electrodes on flexors of the lower arm                   | emg         | channels, emg                                                     | n/a               | [@neuromechanist](https://github.com/neuromechanist) |
-| [emg_CustomBipolarFace](https://github.com/bids-standard/bids-examples/tree/master/emg_CustomBipolarFace)     | EMG recording from facial muscles with many-to-many mapping between sensors and muscles               | emg         | channels, coordsystem, electrodes, emg                            | n/a               | [@neuromechanist](https://github.com/neuromechanist) |
+| [emg_CustomBipolarFace](https://github.com/bids-standard/bids-examples/tree/master/emg_CustomBipolarFace)     | EMG recording from facial muscles with many-to-many mapping between sensors and muscles               | emg         | channels, coordsystem, electrodes, emg, events                    | n/a               | [@neuromechanist](https://github.com/neuromechanist) |
 | [emg_IndependentMod](https://github.com/bids-standard/bids-examples/tree/master/emg_IndependentMod)           | Commercial bipolar EMG modules recording multiple muscles with wireless sensors                       | emg         | channels, emg                                                     | n/a               | [@neuromechanist](https://github.com/neuromechanist) |
-| [emg_MutliBodyParts](https://github.com/bids-standard/bids-examples/tree/master/emg_MutliBodyParts)           | EMG recording from multiple body parts with different electrode types                                 | emg         | channels, emg                                                     | n/a               | [@neuromechanist](https://github.com/neuromechanist) |
-| [emg_TwoHDsEMG](https://github.com/bids-standard/bids-examples/tree/master/emg_TwoHDsEMG)                     | High-density EMG grid recordings from two body parts demonstrating grid placement documentation      | emg         | channels, emg                                                     | n/a               | [@neuromechanist](https://github.com/neuromechanist) |
-| [emg_TwoWristbands](https://github.com/bids-standard/bids-examples/tree/master/emg_TwoWristbands)             | EMG recordings using two wristbands with dry electrodes to capture forearm muscle activity           | emg         | channels, emg                                                     | n/a               | [@neuromechanist](https://github.com/neuromechanist) |
-| [emg_concurrentIndepndentUnits](https://github.com/bids-standard/bids-examples/tree/master/emg_concurrentIndepndentUnits) | Concurrent EMG recording with multiple independent recording units at different sampling rates | emg         | channels, emg, photo                                                     | n/a               | [@neuromechanist](https://github.com/neuromechanist) |
+| [emg_MultiBodyParts](https://github.com/bids-standard/bids-examples/tree/master/emg_MultiBodyParts)           | EMG recording from multiple body parts with different electrode types                                 | emg         | channels, electrodes, coordsystem, emg                            | n/a               | [@neuromechanist](https://github.com/neuromechanist) |
+| [emg_TwoHDsEMG](https://github.com/bids-standard/bids-examples/tree/master/emg_TwoHDsEMG)                     | High-density EMG grid recordings from two body parts demonstrating grid placement documentation       | emg         | channels, electrodes, coordsystem, emg                            | n/a               | [@neuromechanist](https://github.com/neuromechanist) |
+| [emg_TwoWristbands](https://github.com/bids-standard/bids-examples/tree/master/emg_TwoWristbands)             | EMG recordings using two wristbands with dry electrodes to capture forearm muscle activity            | emg         | channels, electrodes, coordsystem, emg                            | n/a               | [@neuromechanist](https://github.com/neuromechanist) |
 
 ### DWI
 
@@ -307,6 +307,7 @@ DO NOT EDIT DIRECTLY.
 | [genetics_ukbb](https://github.com/bids-standard/bids-examples/tree/master/genetics_ukbb)                   | multiple tasks, T1w, DTI, BOLD, genetic info                                                | anat, dwi, func                 | FLAIR, T1w, bold, dwi, events, info                                                                            | n/a                                                            | [@cpernet](https://github.com/cpernet)     |
 | [ieeg_visual_multimodal](https://github.com/bids-standard/bids-examples/tree/master/ieeg_visual_multimodal) | n/a                                                                                         | anat, fmap, func, ieeg          | T1w, bold, channels, coordsystem, electrodes, epi, events, ieeg, sbref                                         | n/a                                                            | [@irisgroen](https://github.com/irisgroen) |
 | [synthetic](https://github.com/bids-standard/bids-examples/tree/master/synthetic)                           | A synthetic dataset                                                                         | anat, beh, func                 | T1w, beh, bold, events, physio, scans, sessions, stim                                                          | n/a                                                            | [@effigies](https://github.com/effigies)   |
+| [volume_timing](https://github.com/bids-standard/bids-examples/tree/master/volume_timing)                   | Sparse BOLD acquisitions                                                                    | func                            | bold                                                                                                           | n/a                                                            | [@effigies](https://github.com/effigies)   |
 
 ### MRS
 
@@ -340,13 +341,14 @@ TABLE BELOW IS GENERATED AUTOMATICALLY.
 DO NOT EDIT DIRECTLY.
 -->
 
-| name                                                                        | description     | datatypes   | suffixes         | link to full data                                | maintained by                                |
-|:----------------------------------------------------------------------------|:----------------|:------------|:-----------------|:-------------------------------------------------|:---------------------------------------------|
-| [pet001](https://github.com/bids-standard/bids-examples/tree/master/pet001) | T1w, PET, blood | anat, pet   | T1w, blood, pet  | n/a                                              | [@mnoergaard](https://github.com/mnoergaard) |
-| [pet002](https://github.com/bids-standard/bids-examples/tree/master/pet002) | T1w, PET        | anat, pet   | T1w, pet         | [link](https://openneuro.org/datasets/ds001420/) | [@mnoergaard](https://github.com/mnoergaard) |
-| [pet003](https://github.com/bids-standard/bids-examples/tree/master/pet003) | T1w, PET, blood | anat, pet   | T1w, blood, pet  | n/a                                              | [@mnoergaard](https://github.com/mnoergaard) |
-| [pet004](https://github.com/bids-standard/bids-examples/tree/master/pet004) | PET, blood      | pet         | blood, pet       | n/a                                              | [@mnoergaard](https://github.com/mnoergaard) |
-| [pet005](https://github.com/bids-standard/bids-examples/tree/master/pet005) | T1w, PET        | anat, pet   | T1w, events, pet | n/a                                              | [@mnoergaard](https://github.com/mnoergaard) |
+| name                                                                        | description     | datatypes   | suffixes         | link to full data                                | maintained by                                    |
+|:----------------------------------------------------------------------------|:----------------|:------------|:-----------------|:-------------------------------------------------|:-------------------------------------------------|
+| [pet001](https://github.com/bids-standard/bids-examples/tree/master/pet001) | T1w, PET, blood | anat, pet   | T1w, blood, pet  | n/a                                              | [@mnoergaard](https://github.com/mnoergaard)     |
+| [pet002](https://github.com/bids-standard/bids-examples/tree/master/pet002) | T1w, PET        | anat, pet   | T1w, pet         | [link](https://openneuro.org/datasets/ds001420/) | [@mnoergaard](https://github.com/mnoergaard)     |
+| [pet003](https://github.com/bids-standard/bids-examples/tree/master/pet003) | T1w, PET, blood | anat, pet   | T1w, blood, pet  | n/a                                              | [@mnoergaard](https://github.com/mnoergaard)     |
+| [pet004](https://github.com/bids-standard/bids-examples/tree/master/pet004) | PET, blood      | pet         | blood, pet       | n/a                                              | [@mnoergaard](https://github.com/mnoergaard)     |
+| [pet005](https://github.com/bids-standard/bids-examples/tree/master/pet005) | T1w, PET        | anat, pet   | T1w, events, pet | n/a                                              | [@mnoergaard](https://github.com/mnoergaard)     |
+| [pet006](https://github.com/bids-standard/bids-examples/tree/master/pet006) | PET             | pet         | pet              | n/a                                              | [@bendhouseart](https://github.com/bendhouseart) |
 
 ### qMRI
 
@@ -379,3 +381,13 @@ DO NOT EDIT DIRECTLY.
 | name                                                                            | description                                                      | datatypes       | suffixes   | link to full data   | maintained by                            |
 |:--------------------------------------------------------------------------------|:-----------------------------------------------------------------|:----------------|:-----------|:--------------------|:-----------------------------------------|
 | [pheno004](https://github.com/bids-standard/bids-examples/tree/master/pheno004) | Minimal dataset with subjects with imaging and/or phenotype data | phenotype, anat | T1w        | n/a                 | [@ericearl](https://github.com/ericearl) |
+
+### Provenance
+
+<!--
+TABLE BELOW IS GENERATED AUTOMATICALLY.
+DO NOT EDIT DIRECTLY.
+-->
+
+| name   | description   | datatypes   | suffixes   | link to full data   | maintained by   |
+|--------|---------------|-------------|------------|---------------------|-----------------|
