@@ -1,9 +1,7 @@
-# EMG Custom Bipolar Example
+# EMG Concentric Needl Example
 
 This dataset demonstrates documentation of a concentric needle EMG recording:
-- Single channel bipolar montage
-- ...
-- ...sub
+- Single channel (bipolar) concentric needle
 
 ## Dataset Structure
 
