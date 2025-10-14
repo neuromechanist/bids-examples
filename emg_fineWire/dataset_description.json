@@ -1,0 +1,10 @@
+{
+  "Name": "EMG invasive fine wire electrode example",
+  "License": "BSD 3-Clause",
+  "Authors": ["Thomas Klotz"], 
+  "ReferencesAndLinks": ["https://github.com/bids-standard/bids-specification/pull/1998"],
+  "EthicsApprovals": ["Datasets are de-identified hypotheticals and do not require ethics approval."],
+  "BIDSVersion": "1.10.0",
+  "HEDVersion": "8.3.0",
+  "DatasetType": "raw"
+} 
