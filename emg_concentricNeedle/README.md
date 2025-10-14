@@ -1,6 +1,7 @@
 # EMG Concentric Needl Example
 
 This dataset demonstrates documentation of a concentric needle EMG recording:
+- Invasive EMG
 - Single channel (bipolar) concentric needle
 
 ## Dataset Structure
@@ -15,14 +16,12 @@ emg_concentricNeedle/
 ├── README.md
 └── sub-01/
     └── emg/
-        ├── sub-01_task-XX_channels.tsv
-        ├── sub-01_task-XX_emg.edf
-        └── sub-01_task-XX_emg.json
+        ├── sub-01_task-psaExamination_channels.tsv
+        ├── sub-01_task-psaExamination_emg.edf
+        └── sub-01_task-psaExamination_emg.json
 ```
 
 ## Recording Details
 
-- **Electrode Setup**: Concentric needle EMG recording from XX
+- **Electrode Setup**: Concentric needle EMG recording from the abductor digiti minimi (ADM)
 - **Task**: Sponatneous muscle acivity screening
-- **Electrode Placement**: TODO
-- **Inter-electrode Distance**: 2 cm between recording electrodes 
