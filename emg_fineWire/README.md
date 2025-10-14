@@ -1,4 +1,4 @@
-# EMG Custom Bipolar Example
+# EMG Invasive Fine Wire Example
 
 This dataset demonstrates documentation of a invasive fine wire EMG recording:
 - Invasive EMG
