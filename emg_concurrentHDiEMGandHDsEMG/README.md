@@ -1,9 +1,9 @@
-# EMG Custom Bipolar Example
+# EMG combined invasive and surface EMG
 
-This dataset demonstrates documentation of a concentric needle EMG recording:
-- Single channel bipolar montage
-- ...
-- ...sub
+This dataset demonstrates simualtaneous iEMG and sEMG recordings:
+- Heterogeneous electrodes
+- High-desnity invasive EMG
+- Custom electrodes
 
 ## Dataset Structure
 
@@ -24,7 +24,9 @@ emg_concentricNeedle/
 
 ## Recording Details
 
-- **Electrode Setup**: Concentric needle EMG recording from XX
-- **Task**: Sponatneous muscle acivity screening
-- **Electrode Placement**: TODO
-- **Inter-electrode Distance**: 2 cm between recording electrodes 
+- **Electrode Setup**: A custom HDiEMG thin-filament electrode is inserted into the tibialis anterior muscle, while a HDsEMG array records from the body surface (on top of the same muscle)
+- **Task**: Isometric ramp-and-hold contractions
+- **Custom HDiEMG thin filament electrode**:
+  - Thin film structure: U-shaped polyimid structure with a length of 70 mm, widths of 0.65 mm (electrode filament) and 0.15 mm (guiding filament) and a thickness of 0.015 mm
+  - Linear array of 40 platinum electrode contacs with an interelectrode distance of 0.5 mm
+  - A 25-gauge needle (length: 40 mm) carrying the guiding filament is used to place the thin-film structure in the muscle. Afterwards, the needle is withdrawn, leaving only the thin-film array within the muscle.
